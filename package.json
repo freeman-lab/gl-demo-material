@@ -1,0 +1,31 @@
+{
+  "name": "gl-scene-demo-material",
+  "version": "1.0.0",
+  "description": "demo your gl-scene materials!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/gl-scene-demo-material.git"
+  },
+  "keywords": [
+    "gl",
+    "webgl",
+    "3d",
+    "scene",
+    "material"
+  ],
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/gl-scene-demo-material/issues"
+  },
+  "homepage": "https://github.com/freeman-lab/gl-scene-demo-material#readme",
+  "dependencies": {
+    "bunny": "^1.0.1",
+    "canvas-fit": "^1.5.0",
+    "canvas-orbit-camera": "^1.0.2"
+  }
+}
