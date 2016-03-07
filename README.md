@@ -29,22 +29,8 @@ Create a demo by providing a `material` that conforms to the `gl-scene-material`
 
 You can also provide the following optional arguments in `opts`:
 
-`opts.complex` simplicial complex to demo material with
-
-> if `undefined` will use [`bunny`](https://github.com/miokolysenko/bunny)
-
-`opts.initial` initial style setting
-
-> if `undefined` will use the material's defaults
-
-`opts.lights` array of lights to use in the rendered scene
-
-> if `undefined` will use a single point light
-
-`opts.canvas` existing canvas element to use
-
-> if `undefined` will create one
-
-`opts.root` DOM element to append created canvas to
-
-> if `undefined` will append to `document.body`
+- `opts.complex` simplicial complex to demo material with, if `undefined` will use [`bunny`](https://github.com/miokolysenko/bunny)
+- `opts.initial` initial style setting, if `undefined` will use the material's defaults
+- `opts.lights` array of lights to use in the rendered scene, if `undefined` will use a single point light
+- `opts.canvas` existing canvas element to use, if `undefined` will create one
+- `opts.root` DOM element to append created canvas to, if `undefined` will append to `document.body`
