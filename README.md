@@ -23,7 +23,7 @@ demo(material, {initial: {saturation: 0.75}})
 
 ## usage
 
-#### `demo(material[, opts])`
+#### `demo(material, [opts])`
 
 Create a demo by providing a `material` that conforms to the `gl-scene-material` format.
 
