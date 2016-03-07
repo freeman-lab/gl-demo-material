@@ -2,7 +2,7 @@
 
 Demo your [`gl-scene`](https://github.com/freeman-lab/gl-scene) materials!
 
-This module will render an object with a provided material that conforms to the format defined in `gl-scene-material`. It will also create sliders that let you experiment with changing all the material's style parameters.
+This module will render an object with a specified material. The material must conform to the format specified in `gl-scene-material`, which defines a material as a fragment shader and a list of variable style parameters. The demo will automatically create sliders that let you experiment with changing all the material's parameters.
 
 ## install
 
