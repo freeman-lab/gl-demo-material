@@ -27,7 +27,7 @@ demo(material, {initial: {saturation: 0.75}})
 
 Create a demo by providing a `material` that conforms to the `gl-scene-material` format.
 
-You can also provide the following optional arguments in `opts`:
+You can also provide the following optional arguments in `opts`
 
 - `opts.complex` simplicial complex to demo material with, if `undefined` will use [`bunny`](https://github.com/miokolysenko/bunny)
 - `opts.initial` initial style setting, if `undefined` will use the material's defaults
