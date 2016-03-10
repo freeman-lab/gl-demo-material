@@ -1,31 +1,31 @@
-# gl-scene-demo-material
+# gl-material-demo
 
-Demo your [`gl-scene`](https://github.com/freeman-lab/gl-scene) materials!
+Demo your 3d materials!
 
-This module will render an object with a specified material. The material must conform to the format specified in [`gl-scene-material`](https:github.com/freeman-lab/gl-scene-material), which defines a material as a fragment shader and a list of variable style parameters. The demo will automatically create sliders that let you experiment with changing all the material's parameters.
+This module will render an object with a specified material. The material must conform to the format specified in [`gl-material`](https:github.com/freeman-lab/gl-material), which defines a material as a fragment shader and a list of variable style parameters. The demo will automatically create sliders that let you experiment with changing all the material's parameters.
 
 ## install
 
 Add to your project with
 
 ```
-npm install gl-scene-demo-material
+npm install gl-material-demo
 ```
 
 ## example
 
 ```javascript
-var material = require('gl-scene-normal-material')
-var demo = require('gl-scene-demo-material')
+var material = require('gl-normal-material')
+var demo = require('gl-material-demo')
 
-demo(material, {initial: {saturation: 0.75}})
+demo(material)
 ```
 
 ## usage
 
 #### `demo(material, [opts])`
 
-Create a demo by providing a `material` that conforms to the [`gl-scene-material`](https:github.com/freeman-lab/gl-scene-material) format.
+Create a demo by providing a `material` that conforms to the [`gl-material`](https:github.com/freeman-lab/gl-material) format.
 
 You can also provide the following optional arguments in `opts`
 
