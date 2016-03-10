@@ -88,7 +88,6 @@ function Demo (material, opts) {
   )
 
   panel.on('input', function (data) {
-    console.log(data)
     var style = {}
     foreach(data, function (value, key) {
       style[key] = value
