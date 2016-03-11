@@ -3,7 +3,6 @@ var Context = require('gl-context')
 var fit = require('canvas-fit')
 var orbit = require('canvas-orbit-camera')
 var bunny = require('bunny')
-var css = require('dom-css')
 var control = require('control-panel')
 var foreach = require('lodash.foreach')
 var mapvalues = require('lodash.mapvalues')
@@ -12,7 +11,7 @@ module.exports = Demo
 
 function Demo (material, opts) {
   if (!(this instanceof Demo)) return new Demo(material, opts)
-  if (!material) throw Error ("Must specify a material")
+  if (!material) throw Error('Must specify a material')
   if (!opts) opts = {}
   if (!opts.initial) opts.initial = mapvalues(material.styles, 'default')
   if (!opts.root) opts.root = document.body
@@ -32,13 +31,14 @@ function Demo (material, opts) {
 
   window.addEventListener('resize', fit(opts.canvas), false)
 
-  var gl = Context(opts.canvas, tick)  
+  var gl = Context(opts.canvas, tick)
   var scene = Scene(gl, {background: opts.background})
 
   var shapes = [
     {
       id: 'shape',
       complex: opts.complex,
+      flatten: opts.flatten,
       position: [0, 0, 0],
       material: 'example',
       style: opts.initial
@@ -62,7 +62,7 @@ function Demo (material, opts) {
 
   var t = 0
 
-  function tick () { 
+  function tick () {
     scene.draw(camera)
     scene.select('#shape').rotation(t, [0, 1, 0])
     t += 0.0075
@@ -83,8 +83,9 @@ function Demo (material, opts) {
     }
   })
 
-  var panel = control(inputs, 
-    {position: 'top-right', theme: 'dark', width: 300, title: 'gl-material-' + material.name}
+  var link = '<a href="https://npmjs.org/gl-lambert-material">gl-material-' + material.name + '</a>'
+  var panel = control(inputs,
+    {position: 'top-right', theme: 'dark', width: 300, title: link}
   )
 
   panel.on('input', function (data) {
