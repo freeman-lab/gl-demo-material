@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeman-lab/gl-demo-material.git"
+    "url": "git+https://github.com/freeman-lab/gl-material-demo.git"
   },
   "keywords": [
     "gl",
