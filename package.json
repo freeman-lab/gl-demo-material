@@ -1,15 +1,14 @@
 {
-  "name": "gl-demo-material",
+  "name": "gl-material-demo",
   "version": "1.0.0",
   "description": "demo your 3d materials!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "watchify-server example.js | garnish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeman-lab/gl-scene-demo-material.git"
+    "url": "git+https://github.com/freeman-lab/gl-demo-material.git"
   },
   "keywords": [
     "gl",
@@ -21,9 +20,9 @@
   "author": "freeman-lab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freeman-lab/gl-demo-material/issues"
+    "url": "https://github.com/freeman-lab/gl-material-demo/issues"
   },
-  "homepage": "https://github.com/freeman-lab/gl-demo-material#readme",
+  "homepage": "https://github.com/freeman-lab/gl-material-demo#readme",
   "dependencies": {
     "bunny": "^1.0.1",
     "canvas-fit": "^1.5.0",

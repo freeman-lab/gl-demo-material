@@ -1,5 +1,4 @@
-var fit = require('canvas-fit')
-var material = require('gl-material-lambert')
-var createDemo = require('./index.js')
+var material = require('gl-lambert-material')
+var demo = require('./index.js')
 
-var demo = createDemo(material)
+demo(material)
