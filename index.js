@@ -48,7 +48,7 @@ function Demo (material, opts) {
   var lights = [
     {
       position: [10, 10, 10, 1],
-      style: {color: [1, 1, 1], intensity: 10.0, ambient: 1.0, attenuation: 0.01}
+      style: {color: [1, 1, 1], intensity: 10.0, ambient: 1.0, radius: 30}
     }
   ]
 

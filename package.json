@@ -30,13 +30,13 @@
     "control-panel": "^1.1.0",
     "dom-css": "^2.0.0",
     "gl-context": "^0.1.1",
-    "gl-scene": "^1.0.0",
+    "gl-scene": "^1.0.1",
     "lodash.foreach": "^4.1.0",
     "lodash.mapvalues": "^4.2.0"
   },
   "devDependencies": {
     "garnish": "^5.0.2",
-    "gl-lambert-material": "^1.0.1",
+    "gl-lambert-material": "^1.0.3",
     "watchify-server": "^1.0.2"
   }
 }
